@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class IndexController < ApplicationController
+class Lr8LogicController < ApplicationController
   skip_before_action :output, raise: false
 
   def input; end
