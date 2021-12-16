@@ -1,0 +1,16 @@
+<ol> 
+<% @all.each do |number| %> 
+<li> 
+<ul>
+ 
+ <li> Число: <%= number.num %></li> 
+ <li>Обратная запись:<%= number.rev %></li> 
+ <li>Теория: <%= number.theory %></li> 
+ </ul> 
+ </li>
+
+<% end %> </ol>
+  <form action="<%= lr8_logic_input_url %>" method="get" class="text-center border border-light p-5">
+  <div class = 'row'>
+   <input class="btn btn-outline-primary btn-block my-4" type="submit" value="Ввести новое число"> </div>
+ </form>

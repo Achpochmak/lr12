@@ -1,0 +1,30 @@
+<div class="text-center border border-light p-5"> 
+<p class="h4 mb-4"> Вывод результатов</p>
+  <table class="table"> <%i = 1%> 
+  <tr> <th>Номер итерации</th>
+   <th>Число</th>
+    <th>Обратная запись</th>
+     <th>Теория</th> </tr> <%i = 1%>
+     
+      <% @result.each do |elem| %>
+       <tr>
+        <td> <%=i%> </td>
+         <td> <%=elem[1] %> 
+         </td> <td> <%=elem[2] %> 
+         </td> <td> <%=elem[3]%> </td>
+          </tr> <%i = i + 1%> <% end %>
+        
+ </table>
+  </div>
+    <form action="<%= lr8_logic_input_url %>" method="get" class="text-center border border-light p-5">
+  <div class = 'row'>
+   <input class="btn btn-outline-primary btn-block my-4" type="submit" value="Ввести новое число"> </div>
+ </form>
+   <form action="<%= lr8_logic_show_url %>" method="get" class="text-center border border-light p-5">
+  <div class = 'row'>
+   <input class="btn btn-outline-primary btn-block my-4" type="submit" value="Показать базу данных"> </div>
+ </form>
+   <form action="/session/login" method="get" class="text-center border border-light p-5">
+  <div class = 'row'>
+   <input class="btn btn-outline-primary btn-block my-4" type="submit" value="logout"> </div>
+ </form>

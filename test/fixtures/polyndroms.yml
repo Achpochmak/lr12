@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  param: 1
+  index: MyString
+  num: MyString
+  rev: MyString
+  theory: MyString
+
+two:
+  param: 1
+  index: MyString
+  num: MyString
+  rev: MyString
+  theory: MyString

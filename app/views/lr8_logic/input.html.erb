@@ -1,0 +1,19 @@
+<form action = "<%= lr8_logic_output_url %>" method = "post" class="text border border-light p-2"> 
+<h2>Проверка полиндрома</h2>
+<p>Существует гипотеза, что для любого натурального числа, если оно
+не палиндром, можно получить палиндром за конечное число шагов по
+следующей схеме. Меняем порядок его цифр на обратный и складываем исходное число с
+получившимся. Если сумма не палиндром, то над
+ней повторяется то же действие и так до тех пор, пока не получится
+палиндром.
+<p> Написать программу, подтверждающую эту гипотезу и выводящую результаты на каждом
+шаге в формате: номер шага, текущее
+значение, указание подтверждена ли гипотеза или нет.
+
+<div class = 'row'>
+ <input name ="num" type="number"  required  step = "any" placeholder="Ваше число" class="form-control" style="margin-bottom: 20px"> 
+ <input class="btn btn-primary " type="submit" value="Вычислить"> </div> </form>
+  <form action="<%= lr8_logic_show_url %>" method="get" class="text border border-light p-2">
+  <div class = 'row'>
+   <input class="btn btn-primary " type="submit" value="Показать базу данных"> </div>
+ </form>
