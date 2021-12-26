@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'session/login'
 
   post 'session/create'
 
   get 'session/logout'
-  
+
   resources :users
   resources :polyndroms
   root to: 'lr8_logic#input'

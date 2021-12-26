@@ -58,7 +58,6 @@ class Lr8LogicController < ApplicationController
     render xml: Polyndrom.all.to_xml
   end
 
-
   private
 
   def find_palindromes(number)

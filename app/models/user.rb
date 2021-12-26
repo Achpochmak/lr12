@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   alias_attribute :password_digest, :password_hash
   has_secure_password
+  validates :email, presence: true, uniqueness: true
 
   def self.new_remember_token
     SecureRandom.urlsafe_base64
